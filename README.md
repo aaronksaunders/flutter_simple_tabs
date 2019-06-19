@@ -3,7 +3,8 @@
 A new Flutter project demonstrating the use of the Tabs Widget and using the Provider Pattern for managing stage between the tabs
 
 
-The Provider is the recommended method for managing state in Flutter Application and was presented at Google IO and is at the top of the stack for state management in the Flutter Documentation on State Management
+The Provider is the recommended method for managing state in Flutter Application and was presented at Google IO and is at the top of the stack for state management in the Flutter Documentation on State Management 
+- Video from GoogleI/O [Pragmatic State Management in Flutter (Google I/O'19)](https://youtu.be/d_m5csmrf7I)
 
 **service as my provider...**
 ```dart
