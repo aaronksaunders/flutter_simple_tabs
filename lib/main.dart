@@ -7,11 +7,8 @@ import 'cartlist.dart';
 
 void main() => runApp(
       ChangeNotifierProvider<CartModel>(
-        child: TabBarDemo(),
-        builder: (BuildContext context) {
-          return CartModel();
-        },
-      ),
+          child: TabBarDemo(), //
+          create: (context) => CartModel()),
     );
 
 class TabBarDemo extends StatelessWidget {
@@ -26,7 +23,10 @@ class TabBarDemo extends StatelessWidget {
             bottom: TabBar(
               tabs: [
                 Tab(icon: Icon(Icons.list)),
-                Tab(icon: Icon(Icons.shopping_cart), text: '$count',),
+                Tab(
+                  icon: Icon(Icons.shopping_cart),
+                  text: '$count',
+                ),
               ],
             ),
             title: Text('Tabs Demo'),

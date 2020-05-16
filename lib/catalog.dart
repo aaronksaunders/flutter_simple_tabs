@@ -48,8 +48,7 @@ class _CatalogPageState extends State<CatalogPage> {
                 final form = _formKey.currentState;
                 form.save();
                 if (form.validate()) {
-                  Provider.of<CartModel>(context)
-                      .add(new Item(_name, num.parse(_price)));
+                  Provider.of<CartModel>(context, listen: false).add( Item(_name, num.parse(_price)));
                 } else {
                   print('validate failed');
                 }
